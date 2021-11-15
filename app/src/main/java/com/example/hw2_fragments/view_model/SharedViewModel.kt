@@ -15,6 +15,10 @@ class SharedViewModel(application: Application) : AndroidViewModel(application) 
     private val _selectedUserLiveData = MutableLiveData<LinkedList<User>>()
     private val selectedUserLiveData: LiveData<LinkedList<User>> = _selectedUserLiveData
 
+    fun uploadDefaultUsersList() {
+        _selectedUserLiveData.value = usersData.get(0, 8)
+    }
+
     fun buttonPressed(from: Int, to: Int) {
         _selectedUserLiveData.value = usersData.get(from, to)
     }
