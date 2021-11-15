@@ -2,7 +2,9 @@ package com.example.hw2_fragments.data
 
 import android.app.Application
 import androidx.core.content.res.ResourcesCompat
+import com.example.hw2_fragments.MainActivity
 import com.example.hw2_fragments.R
+import java.util.*
 
 class UsersData(application: Application) {
 
@@ -17,4 +19,14 @@ class UsersData(application: Application) {
         User(7, "Julia", ResourcesCompat.getDrawable(application.resources, R.drawable.ic_user8, null)!!, "was online 6 years ago"),
         User(8, "Kelly", ResourcesCompat.getDrawable(application.resources, R.drawable.ic_user9, null)!!, "was online 3 month ago")
     )
+
+    fun get(from: Int, to: Int): LinkedList<User> {
+        val selectedUsers: LinkedList<User> = LinkedList()
+
+        for (id in from..to) {
+            selectedUsers.add(usersList[id])
+        }
+
+        return selectedUsers
+    }
 }
