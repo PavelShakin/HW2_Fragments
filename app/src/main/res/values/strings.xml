@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">HW2_Fragments</string>
+    <string name="btn1">1-3</string>
+    <string name="btn2">4-6</string>
+    <string name="btn3">7-9</string>
+    <string name="btn4">All</string>
 </resources>
