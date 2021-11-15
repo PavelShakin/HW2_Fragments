@@ -1,10 +1,8 @@
 package com.example.hw2_fragments.fragments
 
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.Button
-import android.widget.LinearLayout
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.hw2_fragments.R
